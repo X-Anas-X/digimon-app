@@ -78,7 +78,7 @@ function addHandler(req, res){
     let safeValues = [name, img, level];
     client.query(SQL, safeValues)
     .then(()=>{
-        res.redirect('/favorite');
+        res.redirect('/selectData');
     })
     .catch((err)=>{
         errHandler(err, req, res);
