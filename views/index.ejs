@@ -12,7 +12,7 @@
         <h3><%=val.level%></h3>
 
         <button class="add"> ADD TO FAVORITE</button>
-        <form action="/add" method="POST" class="show">
+        <form action="/add" method="GET" class="show">
             <input type="text" name="name" value="<%=val.name%>">
             <input type="text" name="img" value="<%=val.img%>">
             <input type="text" name="level" value="<%val.level%>">
